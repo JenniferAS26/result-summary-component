@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+.card-container {
+  background: linear-gradient(360deg, hsl(256, 72%, 46%) 0%, hsl(252, 100%, 67%) 100%);
+  height: 360px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  display: grid;
+  place-items: center;
+  padding: 30px 60px 40px;
+}
+.card-container__result {
+  font-size: 2rem;
+  color: hsl(221, 100%, 96%);
+}
+.card-container__numbers {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #6c4ee6, #805dff);
+  box-shadow: 20px 20px 95px #6e50eb, -20px -20px 95px #825eff;
+  display: grid;
+  place-items: center;
+  grid-template-rows: 110px 30px;
+}
+.card-container__numbers--title {
+  font-size: 6.2rem;
+  color: hsl(0, 0%, 100%);
+  align-self: end;
+}
+.card-container__numbers--text {
+  color: hsla(0, 0%, 100%, 0.501);
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  align-self: flex-start;
+}
+.card-container__great {
+  margin-top: 15px;
+  color: hsl(0, 0%, 100%);
+  font-size: 2.2rem;
+}
+.card-container__text {
+  text-align: center;
+  color: hsla(0, 0%, 100%, 0.501);
+  font-size: 1.4rem;
+}
+@media (min-width: 1440px) {
+  .card-container {
+    grid-template-columns: 375px;
+    height: 510px;
+    border-radius: 40px;
+    padding: 0;
+  }
+  .card-container__result {
+    padding-top: 40px;
+    font-size: 2.4rem;
+  }
+  .card-container__numbers {
+    width: 205px;
+    height: 205px;
+    align-content: center;
+    justify-content: center;
+  }
+  .card-container__numbers--title {
+    font-size: 8.4rem;
+  }
+  .card-container__numbers--text {
+    font-size: 2.4rem;
+  }
+  .card-container__great {
+    font-size: 3.2rem;
+  }
+  .card-container__text {
+    font-size: 1.8rem;
+    padding: 0 60px 30px;
+  }
+}
+
+.summary-container {
+  padding: 0 30px 20px;
+  display: grid;
+  align-items: center;
+  grid-template-rows: 70px auto 90px;
+  grid-template-columns: auto;
+}
+.summary-container__title {
+  font-size: 1.8rem;
+  color: hsl(224, 30%, 27%);
+}
+.summary-container__cards {
+  display: grid;
+  gap: 20px;
+}
+.summary-container__cards .card-impresions {
+  border-radius: 10px;
+  padding: 0 20px;
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.summary-container__cards .card-impresions .impressions-wrapper {
+  display: flex;
+  align-items: center;
+}
+.summary-container__cards .card-impresions .impressions-wrapper__title {
+  font-size: 1.6rem;
+  padding-left: 20px;
+}
+.summary-container__cards .card-impresions .impressions-wrapper__text {
+  font-size: 1.6rem;
+  color: hsl(224, 30%, 27%);
+}
+.summary-container__cards .card-impresions .impressions-wrapper__text .bold {
+  font-weight: 800;
+}
+.summary-container__button {
+  cursor: pointer;
+  height: 55px;
+  border: none;
+  border-radius: 40px;
+  background-color: hsl(224, 30%, 27%);
+  color: hsl(0, 0%, 100%);
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.summary-container__button:hover {
+  background: linear-gradient(360deg, hsl(256, 72%, 46%) 0%, hsl(252, 100%, 67%) 100%);
+}
+@media (min-width: 1440px) {
+  .summary-container {
+    grid-template-columns: 375px;
+    padding: 0 0 0 40px;
+  }
+  .summary-container__title {
+    font-size: 2.8rem;
+    align-self: flex-end;
+  }
+  .summary-container__cards .card-impresions {
+    width: 315px;
+  }
+  .summary-container__button {
+    width: 315px;
+  }
+}
+
+.reaction {
+  background-color: hsla(0, 100%, 67%, 0.118);
+  color: hsl(0, 100%, 67%);
+}
+
+.memory {
+  background-color: hsla(39, 100%, 56%, 0.118);
+  color: hsl(39, 100%, 56%);
+}
+
+.verbal {
+  background-color: hsla(166, 100%, 37%, 0.118);
+  color: hsl(166, 100%, 37%);
+}
+
+.visual {
+  background-color: hsla(234, 85%, 45%, 0.118);
+  color: hsl(234, 85%, 45%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: hsl(224, 30%, 27%);
+  display: grid;
+  place-items: center;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+@media (min-width: 1440px) {
+  body {
+    background-color: hsl(0, 0%, 100%);
+  }
+}
+
+.wrapper {
+  width: 375px;
+  display: grid;
+  grid-template-rows: 360px 480px;
+  background-color: hsl(0, 0%, 100%);
+}
+@media (min-width: 1440px) {
+  .wrapper {
+    width: 750px;
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 10px 20px 20px hsla(234, 85%, 45%, 0.118);
+    border-radius: 40px;
+  }
+}

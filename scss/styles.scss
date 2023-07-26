@@ -1,0 +1,38 @@
+@use 'variables' as v;
+@use 'cardContainer';
+@use 'summaryContainer';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: v.$Dark-gray-blue;
+  display: grid;
+  place-items: center;
+  font-family: v.$font-stack;
+  @media (min-width: v.$Desktop) {
+    background-color: v.$White;
+  }
+}
+
+.wrapper {
+  width: v.$Mobile;
+  display: grid;
+  grid-template-rows: 360px 480px;
+  background-color: v.$White;
+  @media (min-width: v.$Desktop) {
+    width: 750px;
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 10px 20px 20px v.$Cobalt-blue-transparent;
+    border-radius: 40px;
+  }
+}
